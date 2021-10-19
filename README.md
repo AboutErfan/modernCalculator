@@ -1,5 +1,5 @@
 # Modern Javascript Caculator
 
--- Preview Image:
+[x] Preview Image:
 ![Modern Javascript Calculator](https://github.com/AboutErfan/modernCalculator/blob/master/preview.png?raw=true)
 
