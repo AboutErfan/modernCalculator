@@ -1,0 +1,99 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background-color: #DAF0FF;
+}
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.container svg
+{
+    z-index: -1;
+}
+.calculatorBox
+{
+    backdrop-filter: blur(7px);
+    z-index: 9999;
+    background: linear-gradient(to bottom right, #F7F8FB, rgba(247,248,251,0.19));
+    width: 20%;
+    height: 80%;
+    border-radius: 39px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 2px 45px rgba(255, 255, 255, 0.5);
+}
+.calculatorDisplay
+{
+    width: 100%;
+    border-top-left-radius: 39px;
+    border-top-right-radius: 39px;
+    text-align: right;
+    padding: 7.5rem 2rem 0 0;
+    
+}
+.calculatorDisplay h1
+{
+    
+    color: #424242;
+}
+.keypadTable
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+.keypadTable tr
+{
+    display: flex;
+    position: relative;
+}
+
+.keys
+{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 8px 8px;
+    border-radius: 16px;
+    background: linear-gradient(to bottom right, rgba(255,255,255,0.75), rgba(255,255,255,0.17));
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+}
+.plusKey, .equalKey
+{
+    position: absolute;
+    right: 0;
+    height: 90px;
+}
+.plusKey,.divisionKey,.minusKey,.multiKey
+{
+    color: #19ACFF;
+    background: linear-gradient(to bottom right, #ADD8FF, rgba(173,216,255,0.05));
+}
+.equalKey
+{
+    cursor: pointer;
+    box-shadow: 7px 2px 43px rgba(0,163,255,0.65);
+    color: #B2DAFF;
+    background: linear-gradient(to bottom right, #19ACFF, #B2DAFF);
+    margin-top: 46px;
+}
